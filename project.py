@@ -18,7 +18,7 @@ movieHorror = ["Alien", "Psych", "The Shining"]
 
 movieAnimation = ["Spirited Away", "The Lion King", "Grave of the Fireflies", "Coco", "Your Name.", "Toy Story 3", "Toy Story", "Spider-Man: Into the Spider-Verse", "WALL·E", "Princess Mononoke"]
 
-movieWar = ["Saving Private Ryan", "Grave of the Fireflies", "Apocalypse Now", "Casablanca", "Inglourious Basterds", "Come and See", "The Boat", "The Great Dictator", "Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb", "Paths of Glory]
+movieWar = ["Saving Private Ryan", "Grave of the Fireflies", "Apocalypse Now", "Casablanca", "Inglourious Basterds", "Come and See", "The Boat", "The Great Dictator", "Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb", "Paths of Glory"]
             
 movieComedy = ["Life Is Beautiful", "Coco", "The Intouchable", "Back to the Future", "Modern Times", "Toy Story", "City lights", "3 Idiots", "Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb", "The Great Dictator", "Toy Story 3", "Singin' in the Rain"]
 
