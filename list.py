@@ -32,3 +32,4 @@ TV4-7 = ["Breaking Bad", "The sopranos", "The Wonder Years", "House Of Cards", "
 
 TV8 = ["Game of thrones", "Friends", "Seinfeld", "The X-Files", "Family Guy", "The Simpsons", "Homeland", " 24", "Two and Half of Men", "Dexter", "The Walking Dead", "Brooklyn Nine-Nine", "Bobs Burgers", "House", "ER", "The Big Bang Theory", "South Park", "Beavis and Butt-Head", "The Office", "Everybody Loves Raymond", "Law & Order: Special Victims Unit ", "American Dad!", "That '70s Show"", Mad Men", "American Horror Story", "Baywatch", "Futurama", "Supernatural", "How I Met Your Mother", "Beverly Hills, 90210", "Modern Family", "SpongeBob SquarePants"]
 
+genre = ["Drama", "Crime", "Action", "Adventure", "History", "Sci-Fi", "Biography", "Romance", "Western", "Fantasy", "Horror", "Animation", "Family", "War", "Comedy", "Mystery", "Thriller"]
