@@ -1,0 +1,137 @@
+import random
+
+Drama = ["The Shawshank Redemption", "Braveheart", "Come and See", "Citizen Kane", "Lawrence of Arabia", "Once Upon a Time in America", "Good Will Hunting", "Requiem for a Dream", "The Boat", "The Prestige", "Grave of the Fireflies", "Modern Times", "Citylight", "Avengers: Endgame", "The Godfather", "Eternal Sunshine of the Spotless Mind" , "Paths of Glory", "The Dark Knight","Amadeus", "High and Low", "The Shining", "The Lion King", "The Lord of the Rings: The Return of the King", "Schindler List", "Cinema Paradiso", "The Godfather pt 2", "Inglourious Basterds","Oldboy", "Witness for the Prosecution", "3 Idiots", "The Lives of Others", "Django Unchained","Top Gun: Maverick", "The Dark Knight Rises", "12 Angry Men", "Pulp Fiction", "Fight Club", "The lord of the rings: The Two Towers", "The lord of the rings:The fellowship of the Ring", "Forrest Gump", "Goodfellas", "One Flew Over the Cuckoo's Nest", "Interstellar", "City of god","American History X", "Saving Private Ryan", "The Green Mile", "Life Is Beautiful", "Se7en", "The Silence of the Lambs", "Harakiri", "Seven Samurai", "It's a Wonderful Life", "Parasite", "Whiplash", "The Intouchables", "Casablanca", "American Beauty", "Departed", "Gladiator", "The Usual Suspects", "Léon: The Professional", "Apocalypse Now", "Capernaum", "Joker", "Your Name.", "Sunset Blvd.", "The Great Dictator", "The Hunt"]
+
+Crime = ["The Godfather", "The Dark Knight", "The Godfather pt 2", "Reservoir Dogs", "Once Upon a Time in America", "12 Angry Men", "Pulp Fiction", "Goodfellas" ,"High and Low", "City of God", "The Green Mile", "Se7en", "The Silence of the Lambs", "The Departed", "American History X", "The Usual Suspects", "Léon: The Professional", "Joker", "Witness for the Prosecution", "M"]
+
+Action = ["The Dark Knight", "Léon: The Professional", "Indiana Jones and the Raiders of the Lost Ark", "North by Northwest", "Star Wars: Episode VI - Return of the Jedi", "The Lord of the Rings: The Return of the King", "Inception", "Avengers: Infinity War", "Avengers: Endgame", "Gladiator", "Top Gun: Maverick", "The Dark Knight Rises", "Oldboy", "Aliens", "The lord of the rings: The Two Towers", "Spider-Man: Into the Spider-Verse", "Fellowship of the Ring", "The Matrix", "Star Wars: Episode V- The Empire Strikes Back", "Terminator 2: Judgment Day", "Star Wars: Episode IV - A New Hope", "Harakiri", "Seven Samurai", "Princess Mononoke"]
+
+Adventure = ["The Lord of the Rings: The Return of the King", "Inception", "North by Northwest", "Lawrence of Arabia", "2001: A Space Odyssey", "Star Wars: Episode VI - Return of the Jedi", "Toy Story", "Inglourious Basterds", "Coco", "Toy Story 3", "Indiana Jones and the Raiders of the Lost Ark", "Avengers: Infinity War", "Aliens", "Avengers: Endgame", "Back to the Future", "The lord of the rings: The Two Towers", "The lord of the rings:The fellowship of the Ring", "The good, the bad, and the ugly", "Star Wars: Episode V- The Empire Strikes Back", "Interstellar", "Spirited Away", "Star Wars: Episode IV - A New Hope", "Gladiator", "The Lion King", "Spider-Man: Into the Spider-Verse", "WALL·E", "Princess Mononoke"]
+
+Scifi = ["Inception", "2001: A Space Odyssey", "The good, the bad, and the ugly", "The Matrix", "Interstellar", "Terminator 2: Judgment Day", "The Prestige", "Back to the Future", "Alien", "Avengers: Infinity War", "Aliens", "Eternal Sunshine of the Spotless Mind"]
+
+Biography = ["Schindler List", "Goodfellas", "The Intouchables", "Braveheart", "Amadeus", "Lawrence of Arabia"]
+
+Romance = ["Forrest Gump", "Life Is Beautiful", "Cinema Paradiso", "Casablanca", "Modern Times", "City lights", "Eternal Sunshine of the Spotless Mind", "Good Will Hunting", "Vertigo", "Singin' in the Rain"]
+
+Fantasy = ["Star Wars: Episode V- The Empire Strikes Back", "The Green Mile", "Star Wars: Episode IV - A New Hope", "Harakiri", "It's a Wonderful Life", "Your Name.", "Star Wars: Episode VI - Return of the Jedi"]
+
+Horror = ["Alien", "Psycho", "The Shining"]
+
+Animation = ["Spirited Away", "The Lion King", "Grave of the Fireflies", "Coco", "Your Name.", "Toy Story 3", "Toy Story", "Spider-Man: Into the Spider-Verse", "WALL·E", "Princess Mononoke"]
+
+War = ["Saving Private Ryan", "Grave of the Fireflies", "Apocalypse Now", "Casablanca", "Inglourious Basterds", "Come and See", "The Boat", "The Great Dictator", "Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb", "Paths of Glory"]
+            
+Comedy = ["Life Is Beautiful", "Coco", "The Intouchable", "Back to the Future", "Modern Times", "Toy Story", "City lights", "3 Idiots", "Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb", "The Great Dictator", "Toy Story 3", "Singin' in the Rain"]
+
+Mystery = ["Se7en", "The Prestige", "The Usual Suspects", "Apocalypse Now", "Psycho", "Rear Window", "The Lives of Others", "Oldboy", "Memento", "High and Low", "M", "Witness for the Prosecution", "North by Northwest", "Vertigo", "Citizen Kane", "Se7en"]
+
+Thriller = ["The Silence of the Lambs", "Parasite", "Psycho", "Rear Window", "Joker", "The Lives of Others", "Memento", "M", "Come and See", "Reservoir Dogs", "Vertigo"]
+
+TV13 = ["The Mandalorian", "Chernobyl", "Narcos", "Rome", "Band of Brothers", "The Boys", "Legion", "American Crime Story", "Ted Lasso", "True Detective", "The Umbrella Academy", "Scooby Doo, Where Are You!", "Daredevil", "Snowpiercer", "His Dark Materials", "The Pacific", "Deadwood", "The Outsiders", "The Following", "Fleabag", "Penny Dreadful", "Spartacus", "Altered Carbon", "The Punisher", "The Gifted", "The Queens Gambit", "Luke Cage", "Jessica Jones"]
+
+TV47 = ["Breaking Bad", "The sopranos", "The Wonder Years", "House Of Cards", "LOST", "Westworld", "Stranger Things", "Better Call Saul", "Parks and Recreation", "The Wire", "Rick and Morty", "Vikings", "The Good Place", "X-Men: The Animated Series", "The Handmaids Tail", "Mr. Robot", "Boardwalk Empire", "Star Trek: The Next Generation", "Prison Break", "Fargo", "Buffy the Vampire Slayer", "Oz", "Black Mirror", "The Flinestones", "Hero", "Agents of S.H.I.E.L.D.", "The Strain ", "Gotham", "Money Heist", "MacGyver", "True Blood", "BoJack Horseman", "Arrested Development", "Ozark", "Sons of Anarchy", "The Fresh Prince of Bel-Air", "Alias", "Tales from the Crypt", "Orange Is the New Black"]
+
+TV8 = ["Game of thrones", "Friends", "Seinfeld", "The X-Files", "Family Guy", "The Simpsons", "Homeland", " 24", "Two and Half of Men", "Dexter", "The Walking Dead", "Brooklyn Nine-Nine", "Bobs Burgers", "House", "ER", "The Big Bang Theory", "South Park", "Beavis and Butt-Head", "The Office", "Everybody Loves Raymond", "Law & Order: Special Victims Unit ", "American Dad!", "That '70s Show"", Mad Men", "American Horror Story", "Baywatch", "Futurama", "Supernatural", "How I Met Your Mother", "Beverly Hills, 90210", "Modern Family", "SpongeBob SquarePants"]
+
+genre = ["Drama", "Crime", "Action", "Adventure","Sci-Fi", "Biography", "Romance","Fantasy", "Horror", "Animation", "Family", "War", "Comedy", "Mystery", "Thriller"]
+
+
+def movie():
+    ans = input("Would you like to watch a movie or a TV show (Please answer Movie or TV show)")
+
+    while ans == ("Movie"):
+        q = input("What genre do you want to watch?(Please capatlize the first letter)")
+        if q not in genre:
+            print("This genre is not incuded please select a diffrent one.")
+
+        else:
+            if q == "Drama" :
+                print("Your movie is", random.choice(Drama))
+                break
+            else:
+                if q == "Crime":
+                    print("Your movie is",random.choice(Crime))
+                    break
+                else:
+                    if q == "Action":
+                        print("Your movie is", random.choice(Action))
+                        break
+                    else:
+                        if q == "Scifi":
+                            print("Your movie is", random.choice(Scifi))
+                            break
+                        else:
+                            if q == "Adventure":
+                                print("Your movie is", random.choice(Adventure))
+                                break
+                            else:
+                                if q == "Biography":
+                                    print("Your movie is", random.choice(Biography))
+                                    break
+                                else:
+                                    if q == "Romance":
+                                        print("Your movie is", random.choice(Romance))
+                                        break
+                                    else:
+                                        if q == "Fantasy":
+                                            print("Your movie is", random.choice(Fantasy))
+                                            break
+                                        else:
+                                            if q == "Horror":
+                                                print("Your movie is", random.choice(Horror))
+                                                break
+                                            else:
+                                                if q == "Animation":
+                                                    print("Your movie is", random.choice(Animation))
+                                                    break
+                                                else:
+                                                    if q == "Family":
+                                                        print("Your movie is", random.choice(Family))
+                                                        break
+                                                    else:
+                                                        if q == "War":
+                                                            print("Your movie is", random.choice(War))
+                                                            break
+                                                        else:
+                                                            if q == "Comedy":
+                                                                print("Your movie is", random.choice(Comedy))
+                                                                break
+                                                            else:
+                                                                if q == "Mystery":
+                                                                    print("Your movie is", random.choice(Mystery))
+                                                                    break
+                                                                else:
+                                                                    if q == "Thriller":
+                                                                        print("Your movie is", random.choice(Thriller))
+                                                                        break
+                                                                    else:
+                                                                        if q == "Western":
+                                                                            print("Your movie is", random.choice(Western))
+                                                                            break
+                                                                        else:
+                                                                            break
+    while ans == ("TV show"):
+        s = input("How many season would you like the show to be we have the selction of 1-3, 4-7, and 8+, please answer using those")
+        if s == "1-3":
+            print("Your show is", random.choice(TV13))
+            break
+        else:
+            if s == "1-3":
+                print("Your show is", random.choice(TV13))
+                break
+            else:
+                if s == "4-7":
+                    print("Your show is", random.choice(TV47))
+                    break
+                else:
+                    if s == "8+":
+                        print("Your show is", random.choice(TV8))
+                        break
+                
+        
+            
+   
+
+
+movie()
